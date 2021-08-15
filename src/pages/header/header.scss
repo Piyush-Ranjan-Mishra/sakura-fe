@@ -1,0 +1,52 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../../sassStyles/globals";
+
+.header_container {
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 8fr 5rem 5rem 5rem;
+  grid-template-rows: auto;
+
+  &_logo {
+    grid-column: 1/2;
+  }
+
+  &_search {
+    align-self: center;
+    justify-self: center;
+  }
+
+  &_favorite {
+    grid-column: 3/4;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &_cart {
+    grid-column: 4/5;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &_power {
+    grid-column: 5/6;
+    align-self: center;
+    justify-self: center;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.logged-in {
+  color: rgba($primary-color, 1);
+}
+
+// @include media-breakpoint-up(md) {
+//   #header-favorite {
+//     padding-left: 3rem;
+//   }
+// }

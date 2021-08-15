@@ -1,0 +1,16 @@
+@import "../../sassStyles/globals";
+
+.primary_star{
+    --star-size: 2rem;
+    display: inline-block;
+    &_empty{
+        color: rgba($color-black, $alpha: 1.0);
+        width: var(--star-size);
+        height: var(--star-size);
+    }
+    &_filled{
+        color: rgba($color-yellow-dark, $alpha: 1.0);
+        width: var(--star-size);
+        height: var(--star-size);
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../sassStyles/globals";
+
+.primary_footer{
+    background-color: $primary-color;
+    color: $color-white;
+    padding: 5% 10%;    
+
+    
+    background-color: black;
+    &_description{
+       align-items: center;
+       padding: 1rem;
+       
+    }
+    &_company{
+        line-height: 2rem;
+        cursor: pointer;
+        align-items: center;
+        padding: 1rem;
+    }
+    &_contact{
+        line-height: 2rem;
+        cursor: pointer;
+        align-items: center;
+        padding: 1rem;
+    }
+}
